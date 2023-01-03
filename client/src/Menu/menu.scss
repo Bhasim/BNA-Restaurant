@@ -1,0 +1,9 @@
+.textMenu{
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin: 2% 0%;
+    @media screen and (max-width:800px) {
+        font-size: 3vw;
+    }
+}

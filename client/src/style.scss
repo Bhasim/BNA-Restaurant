@@ -1,0 +1,104 @@
+// Desktop
+$black:#242424;
+$gold:#CFBC69 ;
+$box:#aa9432;
+$white:white;
+$fs-1:1vw;
+$fs-2:2vw;
+$fs-3:3vw;
+$br-btn:10px;
+$br-box:20px;
+// Mobile
+$fs-mo-1:4vw;
+body{
+    background-color: $black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    background:white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: $br-box;
+}
+button{
+    cursor: pointer;
+}
+
+@mixin liquidBtn($width) {
+    button {
+        position: relative;
+        // padding: 20px 50px;
+        // display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: $width;
+        overflow: hidden;
+        border-radius: 40px;
+        // color: white !important;
+        height: 2.5vw;
+        &:disabled .liquid{
+            background: red;
+        }
+      }
+      .liquidText{
+          color: white;
+          position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              z-index: 2;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1vw;
+      }
+      button .liquid {
+        position: absolute;
+        width: 100%;
+        top: -80px;
+        left: 0;
+        // width: 200px;
+        height: 200px;
+        background: $gold;
+        box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+        transition: .5s;
+      }
+      button .liquid::after,
+      button .liquid::before {
+        content: '';
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -75%);
+        background: #000;
+      }
+      button .liquid::before {
+        border-radius: 45%;
+        background: rgba(20, 20, 20, 1);
+        animation: animate 5s linear infinite;
+      }
+      button .liquid::after {
+        border-radius: 40%;
+        background: rgba(20, 20, 20, .5);
+        animation: animate 10s linear infinite;
+      }
+      button:hover .liquid{
+        top: -120px;
+      }
+      @keyframes animate {
+        0% {
+          transform: translate(-50%, -75%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -75%) rotate(360deg);
+        }
+      }
+}

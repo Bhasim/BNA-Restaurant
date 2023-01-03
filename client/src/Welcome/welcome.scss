@@ -1,0 +1,145 @@
+@import "../style.scss";
+
+// WLCOME  POP UP 
+
+.container-popup {
+    // background-image: url(../images/backround-popup.jpeg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+   
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.429);
+}
+
+.PopUp{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    color:$gold;
+    
+   
+
+    width: 30%;
+    
+    border: 1px solid $black;
+    border-radius: 1em;
+    box-shadow: -1px 3px 20px 2px $gold;
+    background-color: $black;
+    opacity: 0.80;
+    .popUp-special{
+        text-decoration: underline;
+        cursor: pointer;
+        color: $white;
+        margin-bottom: 2%;
+    }
+
+}
+
+.popup-x{
+   width: 10%;
+   font-size: 1vw;
+
+    border: none;
+    border-top-right-radius: 1em;
+    border-bottom: 1px solid $black;
+    border-left: 1px solid $black;
+    
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+.pu-button-container{
+    //margin-bottom: $fs-1+0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   button{
+    font-size: 1vw;
+   }
+}
+
+.pu-img{
+    width: 95%;
+    margin: $fs-1;
+}
+
+.welcom-text{
+    display: block;
+    font-size: ($fs-1+0.5);
+    text-align: center;
+    margin: $fs-1;
+}
+.popUp-special{
+    text-align: center;
+}
+.pu-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+// THE LANDING-PAGE
+
+
+* {
+    padding: 0;
+    margin: 0;
+  
+}
+
+button{
+    border: 2px solid $black;
+    border-radius: 0.3em;
+    background-color: $gold;
+    
+    padding: 0.5em;
+    
+    transition: 0.3s;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+// ========================== Media qeury ===============
+@media only screen and (max-width:800px) {
+   
+    .PopUp{
+        width: 80%;
+        height: 90%;
+        
+    }
+    .popup-x{
+        font-size: 3vw;
+    }
+    .pu-button-container{
+        button{
+            font-size: 3vw;
+        }
+    }
+    .welcom-text{
+        font-size: 4vw;
+    }
+   
+
+}

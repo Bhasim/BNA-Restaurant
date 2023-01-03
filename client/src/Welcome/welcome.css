@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.nav-item {
+  color: #aa9432;
+  list-style: none;
+}
+
+/* jumbotron animation color css */
+.jumbotron {
+  width: 30wh;
+  height: 30vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #CFBC69, #c79150, #c79b50, #422119, #c7a350, #c76750, #423919, #a17c05);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hoverable:hover {
+  border-right: 5px solid #c79150;
+  border-bottom: 5px solid #c79150;
+  border-radius: 12px;
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.list-group-item {
+  list-style: none;
+  color: #c79150;
+}
+
+.table {
+  -webkit-box-shadow: #aa9432 0px 20px 30px -10px;
+          box-shadow: #aa9432 0px 20px 30px -10px;
+  background-color: #CFBC69;
+}
+
+.nav-link {
+  color: #aa9432;
+  list-style: none;
+}
+/*# sourceMappingURL=welcome.css.map */

@@ -1,0 +1,167 @@
+@import "../style.scss";
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-bottom: 1%;
+    align-items: center;
+    align-content: center;
+    color: white;
+
+    .headings-1 {
+        display: flex;
+        background: rgba(108, 108, 108, 0.232) !important;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+    h1{
+        font-size: 2vw;
+    }
+    h3{
+        font-size: 1.5vw;
+    }
+}
+
+.pic-intro {
+    display: flex;
+    justify-content: space-between;
+
+    //=======================================
+
+    .text-pics-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    //=====================================
+    .pics123 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+
+
+        a {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            font-size: 1vw;
+            color: #e9ecef;
+            text-decoration: none;
+            // ================= 360 hover ======================
+            // :hover {
+            //     transition: transform 1s;
+            //     transform: rotateY(90deg);
+            // }
+
+
+            img {
+                padding: 1% 0%;
+                width: 100%;
+                height: 10vw;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+                border: 5px $white solid;
+                opacity: 0.5;
+                cursor: pointer;
+                margin-bottom: 15%;
+                transition: 0.5s;
+                scale: 20px;
+
+            }
+
+            img:hover {
+
+                opacity: 1;
+                box-shadow: 2px 2px $gold;
+            //    ================= scale hover ============================
+                transition: 1s;
+                transform: scale(1.2) rotate(5deg);
+            }
+        }
+    }
+
+    //=====================================
+    .intro-text {
+        width: 50%;
+        text-align: center;
+        margin-top: 5%;
+
+        h2,
+        p {
+            color: white;
+        }
+
+        h2 {
+            font-size: 1.4vw;
+        }
+
+        p {
+            font-size: 1vw;
+        }
+    }
+
+    //=============================
+    .video {
+        width: 40%;
+        margin-top: 5%;
+
+        video {
+            width: 100%;
+            font-size: 1.2vw;
+            border-radius: 20px;
+        }
+    }
+}
+
+
+// ==================== media query =======================
+@media only screen and (max-width:800px) {
+    #about{
+        h1{
+            font-size: 4vw;
+        }
+        h3{
+            font-size: 3vw;
+        }
+    }
+    .pic-intro{
+        flex-wrap: wrap;
+        .text-pics-container{
+            width: 100%;
+            .pics123{
+                a{
+                    font-size: 2vw;
+                    img{
+                        height: 20vw;
+                    }
+                }
+            }
+        }
+        .intro-text{
+            width: 100%;
+            p{
+                font-size: 2vw;
+            }
+            h2{
+                font-size: 3vw;
+            }
+            
+        }
+        .video{
+            width: 100%;
+        }
+    }
+}

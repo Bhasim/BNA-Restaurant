@@ -1,0 +1,693 @@
+
+
+[
+    
+    {
+        "name":"crock pot roast",
+        "img":"/img/crock.jpg",
+        "ing":["Beef roast","Brown gravy mix","Italian salad dressing mix","Ranch dressing mix"],
+        "type":"meat",
+        "price":25,
+        "quantity":1,
+        "rate":1
+     },
+    {
+        "name":"cheese burger",
+        "img":"/img/CHEESE-BURGER.jpeg",
+        "ing":["200g beef patty", "lettuce", "tomato", "caramelised onion", "cocktail sauce & a slice of melted Cheddar"],
+        "type":"meat",
+        "price":20,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"australian t-bone",
+        "img":"/img/australian-t-bone.jpeg",
+        "ing":["500g. Two cuts in one Tender fillet","juicy Striploin", "basted & char-grilled to perfection."],
+        "type":"meat",
+        "price":25,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"rump",
+        "img":"/img/nz-rump.jpg",
+        "ing":["A delicious cut of beef", "full of natural flavour"],
+        "type":"meat",
+        "price":30,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"striploin",
+        "img":"/img/nz-striploin.jpeg",
+        "ing":["Specially matured", "bursting with flavour"],
+        "type":"meat",
+        "price":35,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"lamb kabobs",
+        "img":"/img/lamb-kabobs.jpg",
+        "ing":["meat lamb", "globe eggplant", "roasted red peppers", "red onion"],
+        "type":"meat",
+        "price":40,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"shakriya",
+        "img":"/img/Shakriya.jpg",
+        "ing":["Red meat","beef bouillon cubes","low fat yogurt","cornstarch"],
+        "type":"meat",
+        "price":20,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"kabsa",
+        "img":"/img/Kabsa.jpg",
+        "ing":["lamb thigh on the bone","ground beef","long grain rice","mixed nuts"],
+        "type":"meat",
+        "price":24.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"lamb kofta",
+        "img":"/img/lamb-kofta.jpg",
+        "ing":["Ground lamb","salt","long grain rice"],
+        "type":"meat",
+        "price":39.99,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"spicy lamb stew",
+        "img":"/img/Spicy-Lamb-Stew.jpg",
+        "ing":["large lamb shanks","cloves garlic","green Thai bird chiles","salt"],
+        "type":"meat",
+        "price":30,
+        "quantity":1,
+        "rate":1
+    },
+   
+    {
+        "name":"lemon cake",
+        "img":"/img/lemo-cake.jpg",
+        "ing":["lemon","milk"],
+        "type":"dessert",
+        "price":30,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"custard",
+        "img":"/img/custard.jpg",
+        "ing":["milk","chcolate","custard"],
+        "type":"dessert",
+        "price":26,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"suksay",
+        "img":"/img/suksay.jpg",
+        "ing":["milk","chocolate","suger","buscuit"],
+        "type":"dessert",
+        "price":20,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"fruit cake",
+        "img":"/img/fruit-cake.jpg",
+        "ing":["Milk","Strawberry","Orange"],
+        "type":"dessert",
+        "price":15,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"crepe",
+        "img":"/img/crepe.jpg",
+        "ing":["Nutella chocolate","Strawberry slices","Banana"],
+        "type":"dessert",
+        "price":29,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"waffle",
+        "img":"/img/waffle.jpg",
+        "ing":["Dough","Cream","Chocolate","Blueberries"],
+        "type":"dessert",
+        "price":28,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"pancake",
+        "img":"/img/pancake.jpg",
+        "ing":["Milk","Vanilla essence","Butter","Honey","Strawberry slices"],
+        "type":"dessert",
+        "price":19,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"cunafe",
+        "img":"/img/cunafe.jpeg",
+        "ing":["Cheese","Melted sugar"],
+        "type":"dessert",
+        "price":15,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"shuaaybiyat",
+        "img":"/img/shuaaybiyat.jpg",
+        "ing":["Nuts","Cream"],
+        "type":"dessert",
+        "price":13,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"petit four",
+        "img":"/img/petit-four.jpg",
+        "ing":["Cocoa butter","milk","sugar","jam"],
+        "type":"dessert",
+        "price":10,
+        "quantity":1,
+        "rate":1
+    },
+
+
+    {
+        "name":"grill plate",
+        "img":"/img/grill-plate.jpeg",
+        "ing":["BBQ braised chicken ribs", "grilled chicken tenders", "chicken wing", "fillet steak", "prawns skewer", "calamari", "corn on the cob", "potato tots", "Cajun spiced curly fries"],
+        "type":"chicken",
+        "price":28,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"classic fried chicken",
+        "img":"/img/classic-fried-chicken.jpg",
+        "ing":["chicken","salt"],
+        "type":"chicken",
+        "price":19,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"chicken breast",
+        "img":"/img/Chicken-Breast.jpg",
+        "ing":["chicken breasts","salt","vegetable","coconut oil","dried parsley"],
+        "type":"chicken",
+        "price":27,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"cream of chicken",
+        "img":"/img/cream-of-chicken.jpg",
+        "ing":["chicken breasts","onion","cream of chicken soup","celery"],
+        "type":"chicken",
+        "price":18,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"chicken fried rice",
+        "img":"/img/chicken-fried-rice.jpg",
+        "ing":["chicken","soy sauce","cooked rice","spring onion"],
+        "type":"chicken",
+        "price":20,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"chicken enchiladas",
+        "img":"/img/chicken-enchiladas.jpg",
+        "ing":["chicken breast, cut into bite-size pieces"," fresh tomatillos","enchilada sauce","cheddar cheese"],
+        "type":"chicken",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"chicken pot pie",
+        "img":"/img/chicken-pot-pie.jpg",
+        "ing":["chicken","sliced carrots","chopped onion","baked pie crusts"],
+        "type":"chicken",
+        "price":17,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"chicken adobo",
+        "img":"/img/chicken-adobo.jpg",
+        "ing":["chicken","whole peppercorn","garlic"],
+        "type":"chicken",
+        "price":24,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"classic chicken",
+        "img":"/classic-chicken.jpg",
+        "ing":["smoked paprika","olive oil","1 chicken","garlic powder"],
+        "type":"chicken",
+        "price":25,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"asian orange chicken",
+        "img":"/img/asian-orange-chicken.jpg",
+        "ing":["chicken","orange juice","rice vinegar","soy sauce"],
+        "type":"chicken",
+        "price":28,
+        "quantity":1,
+        "rate":1
+    }, 
+    
+    {
+        "name":"vegetarian burgers",
+        "img":"/img/vegetarian-burgers.jpeg",
+        "ing":["chopped red onion","Slices of avocado","Fresh mustard and cress","Slices of tomato"],
+        "type":"vegetarian",
+        "price":14,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"vegetarian tortilla casserole",
+        "img":"/img/vegetarian-tortilla-casserole.jpeg",
+        "ing":["large ripe tomato","salsa verde","shredded part-skim mozzarella"],
+        "type":"vegetarian",
+        "price":27,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"vegetarian paella",
+        "img":"/img/vegetarian-paella.jpg",
+        "ing":["soy sausage","marinated artichoke hearts","frozen green peas"],
+        "type":"vegetarian",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"vegetable lettuce wraps",
+        "img":"/img/vegetable-lettuce-wraps.jpeg",
+        "ing":["Mandarin oranges, Clementine","light soy sauce","bamboo shoots"],
+        "type":"vegetarian",
+        "price":17,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"vegetarian tandoori kebabs",
+        "img":"/img/vegetarian-tandoori-kebabs.jpeg",
+        "ing":["paneer","fried tofu puffs","cassava","baby button mushrooms"],
+        "type":"vegetarian",
+        "price":14,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"vegetarian tenderstem",
+        "img":"/img/vegetarian-tenderstem.jpg",
+        "ing":["Tenderstem","yellow pepper","dried egg noodles"],
+        "type":"vegetarian",
+        "price":15,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"vegetarian scotch eggs",
+        "img":"/img/vegetarian-scotch-eggs.jpg",
+        "ing":["large free-range eggs","tin chickpeas","fresh coriander","Vegetable oil"],
+        "type":"vegetarian",
+        "price":18,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"seven-layer vegetarian",
+        "img":"/img/seven-layer-vegetarian.jpeg",
+        "ing":["medium cucumber","peeled and seeded Salt","Greek yogurt","virgin olive oil"],
+        "type":"vegetarian",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"spanakopita",
+        "img":"/img/spanakopita.jpg",
+        "ing":["spring onions, white and green parts","fresh spinach","feta cheese","chopped parsley"],
+        "type":"vegetarian",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"noodle salad",
+        "img":"/img/Noodle-Salad.jpg",
+        "ing":["soy sauce","red radish","cucumber","Fresh coriander sprigs"],
+        "type":"vegetarian",
+        "price":19,
+        "quantity":1,
+        "rate":1
+    },
+    
+    {
+        "name":"chocolate milk shake",
+        "img":"/img/milk-shake.jpg",
+        "ing":["Milk","Cocoa powder","Chocolate ice cream"],
+        "type":"drinks",
+        "price":5,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"orange juice",
+        "img":"/img/orange-juice.jpg",
+        "ing":["Orange","Sugar"],
+        "type":"drinks",
+        "price":7,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"ice coffee",
+        "img":"/img/ice-coffee.jpg",
+        "ing":["Coffee","Milk","Ice","Sugar","Cream"],
+        "type":"drinks",
+        "price":4,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"espresso",
+        "img":"/img/espresso.jpg",
+        "ing":["Ice coffee","Milk","Sweet cream"],
+        "type":"drinks",
+        "price":6,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"ice coffee with vanilla",
+        "img":"/img/ice-coffee-with-valnilla.jpg",
+        "ing":["Coffee","Milk","Vanilla","Ice"],
+        "type":"drinks",
+        "price":7,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"peach juice",
+        "img":"/img/peach.jpg",
+        "ing":["Peaches","Lemon","Honey"],
+        "type":"drinks",
+        "price":10,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"mocha drink",
+        "img":"/img/mocha.jpg",
+        "ing":["Milk","Expresso coffee","Coffee"],
+        "type":"drinks",
+        "price":7,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"cocktail drink",
+        "img":"/img/cocktail.jpg",
+        "ing":["Banana","Strawberry","Milk","Chocolate"],
+        "type":"drinks",
+        "price":9,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Lemonade",
+        "img":"/img/lemonade.jpg",
+        "ing":["Lemon","Sugar","Lemon slices"],
+        "type":"drinks",
+        "price":5,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"blueberry drink",
+        "img":"/img/blueberry.jpg",
+        "ing":["Milk","Blueberry","Sugar"],
+        "type":"drinks",
+        "price":7,
+        "quantity":1,
+        "rate":1
+    }, 
+    
+    {
+        "name":"mankoosha",
+        "img":"/img/mankoosha.jpg",
+        "ing":["Thyme","Oil"],
+        "type":"bakery",
+        "price":3,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"meat berak:",
+        "img":"/img/meat-berak.jpg",
+        "ing":["Minced meat","Onion"],
+        "type":"bakery",
+        "price":3,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"cheese berak",
+        "img":"/img/cheese-berak.jpg",
+        "ing":["Cheese","Parsley"],
+        "type":"bakery",
+        "price":2.5,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"spinach berak",
+        "img":"/img/spinach-berak.jpg",
+        "ing":["Spinach paper","Pomegranate"],
+        "type":"bakery",
+        "price":3,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"samboosa",
+        "img":"/img/samboosa.webp",
+        "ing":["Parmesan cheese","Sesame seeds"],
+        "type":"bakery",
+        "price":3,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"mahamarra",
+        "img":"/img/mahamarra.jpg",
+        "ing":["Muhamarra sauce ( tomatoe-onion-oil)","Sesame seeds"],
+        "type":"bakery",
+        "price":2.5,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"pizza margarita",
+        "img":"/img/margarita.jpg",
+        "ing":["Cheese","Tomato sauce"],
+        "type":"bakery",
+        "price":10,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"pizza tuna",
+        "img":"/img/tuna-pizza.jpg",
+        "ing":["Cheese","Tomato sauce","Tuna"],
+        "type":"bakery",
+        "price":13,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"pizza spinach",
+        "img":"/img/spinach-pizza.jpg",
+        "ing":["Cheese","Tomato sauce","Spinach"],
+        "type":"bakery",
+        "price":15,
+        "quantity":1,
+        "rate":1
+    }, {
+        "name":"pizza four seasons",
+        "img":"/img/pizza-four-seasons.jpg",
+        "ing":["Corn","Olive","Tomato sauce","Green paprika","Tomato","Champignon"],
+        "type":"bakery",
+        "price":16,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Oven Backed Tilapia",
+        "img":"/img/Oven-backed-tilapia.jpg",
+        "ing":["Oven Baked Tilapia. Seasoned with a classic blend of lemon, garlic, melted butter, and paprika,"],
+        "type":"fish",
+        "price":24.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Backed cod with lemon and garlic",
+        "img":"/img/Backed-cod-with-lemon-and-garlic.jpg",
+        "ing":["Tender", "perfectly flaky cod" ],
+        "type":"fish",
+        "price":30,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Lemon Garlic Baked Salmon",
+        "img":"/img/Lemon-Garlic-Baked-salmon-and-garlic.jpg",
+        "ing":["bright, perfectly cooked salmon"],
+        "type":"pizza",
+        "price":35,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Trout Fish Piccata",
+        "img":"/img/trout-fish-piccata.jpg",
+        "ing":["This fish piccata recipe with pan-seared trout and a lemon piccata sauce"],
+        "type":"fish",
+        "price":29.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Whole Branzino with Ladolemono Sauce",
+        "img":"/img/whole-Branzino-with-Ladolemono-sauce.jpg",
+        "ing":["Finished with  lemony", "garlicky  sauce,"],
+        "type":"fish",
+        "price":29,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Fish Fingers",
+        "img":"/img/Fish-Fingers.jpg",
+        "ing":["Fish fingers with spicy tartare and green salad"],
+        "type":"fish",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"chili garlic butter shrimp",
+        "img":"/img/chili-garloic-butter-short.jpg",
+        "ing":["A garlic buttery sauce with a smack of chili "],
+        "type":"fish",
+        "price":35,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Cajun Seafood Boil with Garlic Butter Sauce",
+        "img":"/img/cajun-seafood-Boil-with-garlic-Butter-Sause.jpg",
+        "ing":["This Cajun Seafood Boil with Garlic Butter Sauce is a flavorful feast of fresh shrimp", "crab", "lobster tails", "mussels", "clams", "smoky sausage", "tender potatoes"],
+        "type":"fish",
+        "price":49.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Sayadiah",
+        "img":"/img/sayadiah.jpg",
+        "ing":[" Middle Eastern dish of fish and rice with warm spices and caramelized onions"],
+        "type":"fish",
+        "price":34.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"honey garlic butter shrimp ",
+        "img":"/img/honey-garlic-butter-salmon.jpg",
+        "ing":["The best buttery honey garlic shrimp"],
+        "type":"fish",
+        "price":34,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"pesto penne pasta",
+        "img":"/img/pesto-penne-pasta.jpg",
+        "ing":[" Freshly cooked pasta is packed with flavour when tossed in pesto, fresh cherry tomatoes and Parmesan cheese"],
+        "type":"Pasta",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Creamy white chicken and spinach lasagna ",
+        "img":"/img/Creamy-white-chicken-and-spinach-lasagna.jpg",
+        "ing":[" a creamy spinach alfredo white sauce, a ricotta cheese mixture, and gooey shredded mozzarella on top"],
+        "type":"Pasta",
+        "price":28.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"cheesy tortellini and sausage bake",
+        "img":"/img/cheesy-tortellini-and-sausage-bake.jpg",
+        "ing":["loaded with tortellini pasta, Italian sausage, tomato sauce, fresh parsley and two types of gooey cheese baked"],
+        "type":"Pasta",
+        "price":23,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Fettuccine alfredo",
+        "img":"/img/Fettuccine-alfredo.jpg",
+        "ing":[" Tender fettuccine noodles are tossed in a  alfredo sauce made creamy with heavy cream, butter, and Parmesan cheese, and seasoned with garlic, salt, and pepper"],
+        "type":"Pasta",
+        "price":29.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Grilled Seafood Pasta",
+        "img":"/img/Grilled-Seafood-Pasta.jpeg",
+        "ing":["with chilli and tomato sauce"],
+        "type":"Pasta",
+        "price":49.99,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Pasta Ponza",
+        "img":"/img/Pasta-Ponza.jpeg",
+        "ing":["with Pecorino Romano cheese"],
+        "type":"pasta",
+        "price":20,
+        "quantity":1,
+        "rate":1
+    },
+    {
+        "name":"Chicken Pasta Bake",
+        "img":"/img/Chicken-Pasta-Bake.jpg",
+        "ing":["Filled with chunks of chicken, penne pasta, chopped tomatoes all wrapped up in a creamy cheese sauce. "],
+        "type":"Pasta",
+        "price":25,
+        "quantity":1,
+        "rate":1
+    }
+
+   
+]

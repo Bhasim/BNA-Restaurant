@@ -1,0 +1,241 @@
+@import "../style.scss";
+.book{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #41414177;
+        border-radius: $br-box;
+        padding: 2%;
+    //   border: 1px $gold dashed;
+      border-width: 4px;
+      
+        // .date{
+        //     width: 50%;
+        //     input{
+        //         width: 100%;
+        //        padding: 3%;
+        //        background-color: $white;
+        //        font-weight: bold;
+        //        border-radius: $br-btn;
+        //        border: none;
+        //        outline: none;
+        //     }
+        //     h1{
+        //         color: black;
+        //         background-color: $white;
+        //         font-size: $fs-1;
+        //         text-align: center;
+        //         padding: 2%;
+        //        border-radius: $br-btn;
+        //         margin-top: 5%;
+        //         &:empty{
+        //             display: none;
+        //         }
+        //     }
+        // }
+
+        // .hour{
+        //     width: 50%;
+        //     select{
+        //         width: 100%;
+        //         padding: 3%;
+        //         background-color: $white;
+        //         font-weight: bold;
+        //         border-radius: $br-btn;
+        //     }
+        //     h1{
+        //         color: black;
+        //         background-color: $white;
+        //         font-size: $fs-1;
+        //         text-align: center;
+        //         padding: 2%;
+        //        border-radius: $br-btn;
+        //         margin-top: 5%;
+        //         &:empty{
+        //             display: none;
+        //         }
+        //     }
+        // }
+
+        button{
+            width: 30%;
+            padding: 1% 0;
+            background-color: $gold;
+            color: $white;
+            border-radius: $br-btn;
+            border: none;
+            outline: none;
+
+        }
+
+        .bookBtn {
+            position: relative;
+            // padding: 20px 50px;
+            // display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 13%;
+            overflow: hidden;
+            border-radius: 40px;
+            // color: white !important;
+            height: 2.5vw;
+            &:disabled .liquid{
+                background: red;
+            }
+           
+          }
+          .liquidText{
+              color: white;
+              position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 2;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 1vw;
+                 
+          }
+       
+          button .liquid {
+            position: absolute;
+            top: -80px;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: $gold;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+            transition: .5s;
+           
+          }
+         
+          
+          button .liquid::after,
+          button .liquid::before {
+            content: '';
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            background: #000;
+          }
+          
+          button .liquid::before {
+            
+            border-radius: 45%;
+            background: rgba(20, 20, 20, 1);
+            animation: animate 5s linear infinite;
+          }
+          
+          button .liquid::after {
+            
+            border-radius: 40%;
+            background: rgba(20, 20, 20, .5);
+            animation: animate 10s linear infinite;
+          }
+          
+          button:hover .liquid{
+            top: -120px;
+          }
+          @keyframes animate {
+            0% {
+              transform: translate(-50%, -75%) rotate(0deg);
+            }
+            100% {
+              transform: translate(-50%, -75%) rotate(360deg);
+            }
+          }
+        
+    }
+    // ================ right =============
+    .right{
+        // width: 40%;
+       
+        span{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+           transform: translateY(-100%);
+          display: flex;
+          justify-content: center;
+           .inside{
+               width: 30%;
+            background-color: rgba(0, 0, 0, 0.74);
+
+            //    height: 100%;
+               display: flex;
+               align-items: center;
+               flex-direction: column;
+               border-radius: $br-box;
+               h1{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            h3{
+                color: white;
+            }
+            h4{
+                background-color: rgba(255, 255, 255, 0.747);
+                color: black;
+                width: 90%;
+                text-align: center;
+                padding: 2% 0;
+               border-radius: $br-box;
+
+            }
+           }
+        }
+    }
+}
+
+@keyframes hide {
+    from{
+        transform: translateY(0%);
+    }to{
+        transform: translateY(-100%);
+    }
+}
+@keyframes show {
+    from{
+        transform: translateY(-100%);
+    }to{
+        transform: translateY(0%);
+    }
+}
+// ==================== Media query ====================
+@media only screen and (max-width:800px) {
+  .book{
+    flex-wrap: wrap;
+    form{
+      width: 100%;
+      .bookBtn {
+        padding: 5%;
+        width: 30%;
+       .liquidText{
+         font-size: 3vw;
+       }
+      }
+
+    }
+    .right{
+      span{
+        .inside{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

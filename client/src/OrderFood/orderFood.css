@@ -1,0 +1,320 @@
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.nav-item {
+  color: #aa9432;
+  list-style: none;
+}
+
+/* jumbotron animation color css */
+.jumbotron {
+  width: 30wh;
+  height: 30vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #CFBC69, #c79150, #c79b50, #422119, #c7a350, #c76750, #423919, #a17c05);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hoverable:hover {
+  border-right: 5px solid #c79150;
+  border-bottom: 5px solid #c79150;
+  border-radius: 12px;
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.list-group-item {
+  list-style: none;
+  color: #c79150;
+}
+
+.table {
+  -webkit-box-shadow: #aa9432 0px 20px 30px -10px;
+          box-shadow: #aa9432 0px 20px 30px -10px;
+  background-color: #CFBC69;
+}
+
+.nav-link {
+  color: #aa9432;
+  list-style: none;
+}
+
+.orderFood {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderFood .order {
+  background-color: gray;
+  width: 50%;
+  padding: 0.5%;
+  border-radius: 20px;
+}
+
+.orderFood .order .IX {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.orderFood .order .IX h1 {
+  background-color: lightgray;
+  font-size: calc($fs-1 + 0.2vw);
+  padding: 0.3% 1%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.orderFood .order .orderCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderFood .order .orderCon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: 20vw;
+}
+
+.orderFood .order .orderCon a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.orderFood .order .orderCon h1 {
+  color: white;
+  font-size: 2vw;
+  margin: 2% 0;
+}
+
+.orderFood .order .orderCon ul {
+  width: 40%;
+}
+
+.orderFood .order .orderCon ul li {
+  color: white;
+  font-size: 1vw;
+  list-style: none;
+}
+
+.orderFood .order .orderCon ul li::before {
+  content: "\2022";
+  color: #CFBC69;
+  padding-right: 2%;
+  font-size: 1vw;
+}
+
+.orderFood .order .orderCon .quan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin: 2% 0;
+}
+
+.orderFood .order .orderCon .quan button {
+  width: 20%;
+  padding: 1% 0;
+  font-size: calc($fs-1 + 0.2vw);
+  border: none;
+  outline: none;
+  background-color: #CFBC69;
+  color: white;
+  border-radius: 10px;
+}
+
+.orderFood .order .orderCon .quan h3 {
+  color: white;
+  font-size: calc($fs-1 + 0.2vw);
+}
+
+.orderFood .order .orderCon .add {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderFood .order .orderCon .add button {
+  border-radius: 10px;
+  width: 40%;
+  padding: 1% 0;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+  background-color: #CFBC69;
+  color: white;
+}
+
+.orderFood .order .orderCon .add h4 {
+  color: white;
+  font-size: 1vw;
+}
+
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes popFade {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    opacity: 0.8;
+  }
+}
+
+@keyframes popFade {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    opacity: 0.8;
+  }
+}
+/*# sourceMappingURL=orderFood.css.map */

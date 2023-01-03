@@ -1,0 +1,107 @@
+.chatPage{
+    .title{
+        text-align: center;
+        font-size: 2vw;
+        color: white;
+    }
+    .chatPageUsers{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 2%;
+        h3{
+            color: white;
+            width: 9%;
+            background-color: rgba(255, 255, 255, 0.466);
+            padding: 2% 0;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .notifi{
+            background-color: skyblue;
+        }
+    }
+    // ===========================
+    .chats{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.623);
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .chats-container{
+            width: 50%;
+            span{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                background-color: white;
+                color: black;
+                width: 3%;
+                padding:1% 2%;
+                cursor: pointer;
+                border-radius: 0 20px 20px 0;
+            }
+            .chatsWindow{
+                background-color: white;
+                height: 20vw;
+                overflow-y: scroll;
+                p{
+                    color: white;
+                    padding: 1%;
+                    width: 40%;
+                    word-break: break-all;
+                }
+                .green{
+                    background-color: green;
+                    border-radius: 0 10px 10px 10px;
+                    
+                }
+                .red{
+                    text-align: right;
+                    background-color: red;
+                    margin-left: auto;
+                    border-radius: 10px 0 10px 10px;
+                }
+            }
+            form{
+                display: flex;
+                align-items: center;
+                background-color: white;
+            border-radius:0 0 10px 10px;
+                padding: 0.5%;
+                border-top: 1px solid #000;
+                input{
+                    background-color: transparent;
+                    width: 95%;
+                    border: none;
+                    outline: none;
+                    padding: 0.5%;
+                    font-size: 0.8vw;
+                }
+                .chatBtn{
+                    background: transparent !important;
+                    border: none;
+                    outline: none;
+                    // width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                font-size: 0.8vw !important;
+                    svg{
+                        fill: black;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

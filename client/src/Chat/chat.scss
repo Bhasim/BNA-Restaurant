@@ -1,0 +1,179 @@
+@import "../style.scss";
+.chat-btn{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    padding: 0.5%;
+    cursor: pointer;
+    width: 18vw;
+    
+    z-index: 4;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+  
+    .chat-right{
+        display: flex;
+        align-items: flex-end;
+        .chefLogo{
+            fill: $gold;
+            font-size: 3vw;
+        transition: 0.5s;
+        &:hover{
+            transition: 0.5s;
+    
+                transform: rotate(10deg) scale(1.4);
+                fill: white;
+        }
+         
+        }
+    }
+
+
+    .chat-left{
+        height: 10vw;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        border-radius: 10px;
+        .chat-texts{
+            width: 100%;
+            height: 100%;
+            border: 2px white solid;
+            background-color: white;
+        border-radius: 10px 10px 0 0;
+        overflow-y: scroll;
+        .busy{
+            color: red;  
+            font-size: 1vw;   
+        }
+        p{
+            color: white;
+            padding: 1%;
+            width: 70%;
+            word-break: break-all;
+            font-size: 0.8vw;
+        }
+        .red{
+            text-align: right;
+            background-color: red;
+            margin-left: auto;
+            border-radius: 10px 0 10px 10px;
+
+        }
+        .green{
+            background-color: green;
+            border-radius: 0 10px 10px 10px;
+
+        }
+
+        }
+        .chatForm{
+            display: flex;
+            align-items: center;
+            background-color: white;
+        border-radius:0 0 10px 10px;
+            padding: 0.5%;
+            input{
+                background-color: transparent;
+                width: 90%;
+                border: none;
+                outline: none;
+                padding: 0.5%;
+                font-size: 0.8vw;
+
+            }
+            .chatBtn{
+                background: transparent !important;
+                border: none;
+                outline: none;
+                // width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 0.8vw !important;
+                svg{
+                    fill: black;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+
+    
+
+    
+   
+}
+
+@keyframes animateChef {
+    from{
+        opacity: 0;
+        // width: 0;
+        // transform: translateX(100%);
+        height: 0;
+    }to{
+        opacity: 1;
+        // width: 100%;
+        // transform: translateX(0%);
+        height: 10vw;
+
+
+    }
+}
+
+@keyframes animateChefOff {
+    from{
+        opacity: 1;
+        // width: 100%;
+        // transform: translateX(0%);
+        height: 10vw;
+
+    }
+    to{
+        opacity: 0;
+        // width: 0;
+        // transform: translateX(100%);
+        height: 0;
+
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .chat-btn{
+        width: 100%;
+        left: 0;
+        z-index: 11;
+        .chat-right{
+            .chefLogo{
+                font-size: 8vw;
+            }
+        }
+        .chat-left{
+            height: 130vw;
+            width: 100%;
+            .chat-texts{
+                .busy{
+                    font-size: 2.5vw;
+                }
+                p{
+                    width: 100%;
+                    font-size: 3vw;
+                }
+            }
+            .chatForm{
+                input{
+                    padding: 2%;
+                    font-size: 2.5vw;
+                }
+                .chatBtn{
+                    font-size: 2vw !important;
+                   
+                }
+            }
+        }
+    }
+}

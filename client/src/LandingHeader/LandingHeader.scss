@@ -1,0 +1,636 @@
+@import "../style.scss";
+
+
+.container-LandingHeader{
+  display: flex;
+  flex-direction: column;
+ background-color: $black;
+ 
+  
+}
+.Logo-in-user {
+  
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+ position: relative;
+ z-index: 5;
+ .logo-in-user-container{
+  width:20%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 1%;
+  ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    .auth-btns{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      button{
+        width: 49%;
+        font-size: 1vw;
+      }
+    }
+  }
+ }
+
+}
+
+.logoHeader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+background-color: #242424;
+  a{
+    display: flex;
+    width: 25%;
+    
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    
+      animation: logoMove 2s 2s infinite alternate ;
+      
+    
+  }
+}
+
+
+
+@keyframes logoMove {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Header {
+    position: relative;
+   // top: 0; /* Stick it to the top */
+    //max-height: 70px;
+    //width: 100vw;
+    margin-top: 0.99%;
+  // height: 5vw;
+    display: flex;
+   justify-content: center;
+    /* Cosmetics */
+    //  background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 6;
+
+    //========================================== drops start ================================================
+
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes drop {
+      0% {
+        bottom: 0px;
+        opacity: 1;
+      }
+      
+      80% {
+        opacity: 1;
+      }
+      
+      100% {
+        opacity: 0;
+        bottom: -200px;
+      }
+    }
+    
+    @keyframes wave {
+      0% {
+        background-position: 0 160px;
+        background-size: 170px 300px;
+      }
+      
+      100% {
+        background-position: 500px -18px;
+        background-size: 250px 150px;
+      }
+    }
+    
+  
+    // ===============================
+    .loader {
+      width: 200px;
+      height: 1px;
+      position: absolute;
+      // position: relative;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 100%;
+      bottom: 0;
+      text-align: center;
+      line-height: 90px;
+      font-family: sans-serif;
+      color: $gold;
+      font-size: 16px;
+    
+    }
+    
+    .loader span {
+      z-index: 3;
+    }
+    
+    .loader-bg {
+      // position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: transparent repeat-x 0; 
+      z-index: 2;
+      animation: wave 1s ease-out forwards;
+    }
+    
+    .drops {
+      -webkit-filter: url('#liquid');
+      filter: url('#liquid');
+      position:absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      z-index: 1;
+      opacity: 0;
+      animation: fade-in .1s linear .4s forwards;
+    }
+    
+    .drop1 , .drop2 {
+      width: 21px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+       background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    }
+    
+    .drop1 {
+      width: 190px;
+      height: 16px;
+      bottom: 2px;
+      border-radius: 0;
+    }
+    
+    .drop2 {
+      animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .5s infinite;
+    }
+
+    //=======================================drops end==================================================
+    // ========================== Second drop ================
+    .loader-1 {
+      width: 200px;
+      height: 1px;
+      position: absolute;
+      // position: relative;
+      margin: auto;
+      left: 30%;
+      right: 0;
+      top: 100%;
+      bottom: 0;
+      text-align: center;
+      line-height: 90px;
+      font-family: sans-serif;
+      color: $gold;
+      font-size: 16px;
+    
+    }
+    
+    .loader-1 .span-1 {
+      z-index: 3;
+    }
+    
+    .loader-1-bg {
+      // position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: transparent repeat-x 0; 
+      z-index: 2;
+      animation: wave 1s ease-out forwards;
+    }
+    
+    .drops-1 {
+      -webkit-filter: url('#liquid');
+      filter: url('#liquid');
+      position:absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      z-index: 1;
+      opacity: 0;
+      animation: fade-in .1s linear .3s forwards;
+    }
+    
+    .drop-1 , .drop-2 {
+      width: 21px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+       background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+    }
+    
+    .drop-1 {
+      width: 190px;
+      height: 16px;
+      bottom: 2px;
+      border-radius: 0;
+    }
+    
+    .drop-2 {
+      animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .4s infinite;
+    }
+// ========================= The third ===============
+.loader-2 {
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  // position: relative;
+  margin: auto;
+  left: 70%;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
+  line-height: 90px;
+  font-family: sans-serif;
+  color: $gold;
+  font-size: 16px;
+  svg{
+    display: none;
+  }
+
+}
+
+.loader-2 .span-2 {
+  z-index: 3;
+}
+
+.loader-2-bg {
+  // position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent repeat-x 0; 
+  z-index: 2;
+  animation: wave 1s ease-out forwards;
+}
+
+.drops-2 {
+  -webkit-filter: url('#liquid');
+  filter: url('#liquid');
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in .1s linear .2s forwards;
+}
+
+.drop-21 , .drop-22 {
+  width: 21px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+   background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+}
+
+.drop-21 {
+  width: 190px;
+  height: 16px;
+  bottom: 2px;
+  border-radius: 0;
+}
+
+.drop-22 {
+  animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .3s infinite;
+}
+// ========================== the fourth ======================
+
+.loader-3 {
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  // position: relative;
+  margin: auto;
+  left: 0%;
+  right: 30%;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
+  line-height: 90px;
+  font-family: sans-serif;
+  color: $gold;
+  font-size: 16px;
+
+}
+
+.loader-3 .span-3 {
+  z-index: 3;
+}
+
+.loader-3-bg {
+  // position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent repeat-x 0; 
+  z-index: 2;
+  animation: wave 1s ease-out forwards;
+}
+
+.drops-3 {
+  -webkit-filter: url('#liquid');
+  filter: url('#liquid');
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in .1s linear .6s forwards;
+}
+
+.drop-31 , .drop-32 {
+  width: 21px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+   background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+}
+
+.drop-31 {
+  width: 190px;
+  height: 16px;
+  bottom: 2px;
+  border-radius: 0;
+}
+
+.drop-32 {
+  animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .7s infinite;
+}
+// ==================== the five= 
+.loader-4 {
+  width: 200px;
+  height: 1px;
+  position: absolute;
+  // position: relative;
+  margin: auto;
+  left: 0%;
+  right: 70%;
+  top: 100%;
+  bottom: 0;
+  text-align: center;
+  line-height: 90px;
+  font-family: sans-serif;
+  color: $gold;
+  font-size: 16px;
+
+}
+
+.loader-4 .span-4 {
+  z-index: 3;
+}
+
+.loader-4-bg {
+  // position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent repeat-x 0; 
+  z-index: 2;
+  animation: wave 1s ease-out forwards;
+}
+
+.drops-4 {
+  -webkit-filter: url('#liquid');
+  filter: url('#liquid');
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-in .1s linear .1s forwards;
+}
+
+.drop-41 , .drop-42 {
+  width: 21px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+   background: linear-gradient(90deg, $gold, #b89a15);
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
+}
+
+.drop-41 {
+  width: 190px;
+  height: 16px;
+  bottom: 2px;
+  border-radius: 0;
+}
+
+.drop-42 {
+  animation: drop 1.3s cubic-bezier(1,.19,.66,.12) .2s infinite;
+}
+
+
+
+
+
+  }
+  
+  
+  .NavLandingHeader {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding: 1% 0;
+  }
+  .NavLandingHeader a {
+    color: #fff;
+    font-size: 1.5vw;
+    // font-size: calc($fs-1 + 0.5vw);
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+    transition: 0.5s;
+   
+  }
+  
+ 
+  
+  .NavLandingHeader a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: black;
+  }
+
+  @keyframes underLine {
+      0%{
+        width: 0;
+      }35%{
+        width: 100%;
+      }70%{
+        width: 70%;
+      }100%{
+        width: 100%;
+      }
+  }
+
+
+  
+  .Shopping, .user {
+    
+    font-size: $fs-1;
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.1s;
+    color: $gold;
+    margin: 1%;
+  }
+
+   .Shopping:hover, .user:hover {
+    transform: scale(1.1);
+  }
+
+  .Burger:active {
+    transform: scale(1.2);
+  }
+  
+  
+
+  // =====================================
+
+  @keyframes anim {
+
+    0% {
+    
+    background-position: 0 50%;
+    
+    }
+    
+    50% {
+    
+    background-position: 100% 50%;
+    
+    }
+    
+    100% {
+    
+    background-position: 0 50%; }
+  }
+
+// =================================== Media query ==================
+@media only screen and (max-width:800px){
+  .Logo-in-user{
+    .logo-in-user-container{
+      width: 100%;
+      button{
+        svg{
+          font-size: 3vw;
+        }
+      }
+      ul{
+        .auth-btns{
+          button{
+            font-size: 3vw;
+          }
+        }
+      }
+    }
+  }
+  .logoHeader{
+    a{
+      width: 50%;
+    }
+  }
+  // ====================
+  .Header{
+    .loader,.loader-1,.loader-2,.loader-3,.loader-4{
+      display: none;
+    }
+    .NavLandingHeader{
+      width: 100%;
+      padding: 1%;
+      a{
+        font-size: 3vw;
+      }
+    }
+  }
+}

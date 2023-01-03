@@ -1,0 +1,191 @@
+@import "../style.scss";
+.food{
+    // ========================== Header ===================
+   
+    // ====================================== Food ===============
+    .foodCon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box{
+            width: 23%;
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $box;
+            border-radius: $br-box;
+            box-shadow: 5px 5px 10px black;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+                transition: 0.5s;
+
+            }
+            a{
+                display: flex;
+                width: 100%;
+                //  height: fit-content;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 15vw;
+                    object-fit: cover;
+                     border-radius: $br-box $br-box 0 0;
+                }   
+                &::after{
+                    content: "";
+                    border-radius: $br-box $br-box 0 0;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    // left: 0;
+                    background-color: rgba(0, 0, 0, 0.575);
+                    z-index:1;
+                    width: 0%;
+                    transition: 0.5s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                   white-space: nowrap;
+                   font-size: $fs-1;
+                }
+                &:hover{
+                    &::after{
+                      animation: delayContent 2s;
+                    content:attr(data-type);
+                    width: 100%;
+                  }
+                }
+            }
+            h1{
+                color: $white;
+                font-size: $fs-2;
+                // margin: 5% 0;
+                padding: 1% 0;
+                text-align: center;
+                min-height: 5vw;
+            }
+           .boxText{
+               width: 100%;
+               height:100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+               border-radius:0 0 $br-box $br-box ;  
+            h2{
+                background-color: rgba(0, 0, 0, 0.349);
+                width: 100%;
+                color: $white;
+                text-align: center;
+                padding: 3%;
+                font-size: calc($fs-1 + 0.5vw);
+                margin: 2% 0;
+            }
+           .ingre{
+               width: 100%;
+               text-align: center;
+               height: 7vw;
+               overflow-y: scroll;
+               &::-webkit-scrollbar{
+                   width: 0.2vw;
+               }
+            p{
+                font-size: calc($fs-1 + 0.1vw);
+                color: $white;
+            }
+           }
+         .textEnd{
+            width: 70%;
+
+            margin-top: 5%;
+            margin-bottom: 2%;
+            h4{
+                color: rgb(99, 17, 17);
+                font-size: 0.8vw;
+                text-align: center;
+            }
+            h3{
+                width: 100%;
+               margin-top: 2%;
+                background-color: rgba(235, 233, 135, 0.596);
+                text-align: center;
+                padding: 2%;
+                border-radius: $br-btn;
+                font-size: calc($fs-1 + 0.1vw);;
+            }
+         }
+           }
+
+        }
+    }
+}
+
+@keyframes delayContent {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+}
+.nav{
+    position: relative;
+    left: 1800px;
+    bottom: 60px;
+    color: goldenrod;
+    text-decoration: none;
+}
+.nav1{
+    position: relative;
+    left: 1720px;
+    bottom: 83px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+// ============================ Media query =========================
+@media only screen and (max-width:800px) {
+    .food{
+        .foodCon{
+            .box{
+                width: 100%;
+                margin-bottom: 3%;
+                a{
+                    img{
+                        height:35vw;
+                    }
+                    &::after{
+                        font-size: 2.5vw;
+                    }
+                }
+                h1{
+                    font-size: 4vw;
+                }
+                .boxText{
+                    h2{
+                        font-size: 3vw;
+                    }
+                    .ingre{
+                        height: auto;
+                        p{
+                            font-size: 2.5vw;
+                        }
+                    }
+                    .textEnd{
+                        h4{
+                            font-size: 2.5vw;
+                        }
+                        h3{
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

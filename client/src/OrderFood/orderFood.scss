@@ -1,0 +1,201 @@
+@import "../style.scss";
+.orderFood{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    // background-color: rgba(0, 0, 0, 0.616);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   .order{
+      background-color: rgba(0, 0, 0, 0.822);
+      width: 50%;
+      padding: 0.5%;
+      border-radius: $br-box;
+    //   animation: pop 1s;
+
+      .IX{
+          display: flex;
+          justify-content: flex-end;
+          h1{
+              background-color: lightgray;
+              font-size: calc($fs-1 + 0.2vw);
+              padding:0.3% 1%;
+              border-radius: 50%;
+              cursor: pointer;
+          }
+      }
+      .orderCon{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          a{
+              display: flex;
+              width: 40%;
+              height: 20vw;
+
+              img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: $br-box;
+              }
+          }
+          h1{
+              color: $white;
+              font-size: $fs-2;
+              margin: 2% 0;
+          }
+          ul{
+              width: 40%;
+
+              li{
+                  color: $white;
+                  font-size: $fs-1;
+                  list-style: none;
+                  &::before{
+                      content: "\2022";
+                      color: $gold;
+                      padding-right: 2%;
+                      font-size: $fs-1;
+                  }
+              }
+          }
+          .quan{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 20%;
+              margin: 2% 0;
+              button{
+                  width: 20%;
+                  padding: 1% 0;
+                  font-size: calc($fs-1 + 0.2vw);
+                  border: none;
+                  outline: none;
+                 background-color: $gold;
+                 color: $white;
+                 border-radius: $br-btn;
+              }
+              h3{
+                  color: $white;
+                  font-size:calc($fs-1 + 0.2vw);
+              }
+          }
+          .add{
+              width: 40%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              button{
+                 border-radius: $br-btn;
+                width: 40%;
+                padding: 1% 0;
+                font-size: $fs-1;
+                border: none;
+                outline: none;
+               background-color: $gold;
+               color: $white;
+              }
+              h4{
+                  color: $white;
+                  font-size:$fs-1 ;
+                  
+              }
+          }
+      }
+   }
+}
+
+
+
+@keyframes pop {
+    0%{
+        transform: translateY(-150%);
+        opacity: 0.8;
+    }
+    50%{
+        transform: translateY(10%);
+
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+
+    }
+}
+
+@keyframes popFade {
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(10%);
+
+    }
+    100%{
+        transform: translateY(-150%);
+        opacity: 0.8;
+
+    }
+}
+
+// ============================ Media query =========================
+@media only screen and (max-width:800px){
+    .orderFood{
+        padding: 3%;
+        .order{
+            width: 100%;
+            height: 100%;
+            padding: 2%;
+            .IX{
+                h1{
+                    font-size: 4vw;
+                    padding: 1% 2%;
+                }
+            }
+            .orderCon{
+                a{
+                    width: 100%;
+                    height: 50vw;
+                }
+                h1{
+                    font-size: 4vw;
+                }
+                ul{
+                    width: 80%;
+                    li{
+                        font-size: 3vw;
+                        &::before{
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+                .quan{
+                    width: 50%;
+                    margin-bottom: 4%;
+                    button{
+                        font-size: 3vw;
+                    }
+                    h3{
+                        font-size: 3vw;
+                    }
+                }
+                .add{
+                    width: 60%;
+                    button{
+                        font-size: 3vw;
+                    }
+                    h4{
+                        font-size: 2.5vw;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbb8672a.css",
+    "main.js": "/static/js/main.1236c17c.js",
+    "static/media/BNA-Team-video-2.mp4": "/static/media/BNA-Team-video-2.a8a2166a545bc261de1e.mp4",
+    "static/media/loading.gif": "/static/media/loading.0df1bc38de24e6e7cca3.gif",
+    "static/media/brooke-lark-08bOYnH_r_E-unsplash.jpg": "/static/media/brooke-lark-08bOYnH_r_E-unsplash.0389760fbc0499cfe079.jpg",
+    "static/media/chef.png": "/static/media/chef.b8380bed50c6364760fb.png",
+    "static/media/meat.jpg": "/static/media/meat.f6698d873748cfe97fe7.jpg",
+    "static/media/fish.jpg": "/static/media/fish.ae4cd1f49729b14f8703.jpg",
+    "static/media/chicken.jpg": "/static/media/chicken.42dc302bac4642a01995.jpg",
+    "static/media/bakery.jpg": "/static/media/bakery.3817626d32fb28baf65f.jpg",
+    "static/media/Pasta.jpg": "/static/media/Pasta.657f5432dd2adbc3450a.jpg",
+    "static/media/vegetarian.jpg": "/static/media/vegetarian.001fd45409bb1a0d4147.jpg",
+    "static/media/dessert.jpg": "/static/media/dessert.65dec3ef10ad9f0c7986.jpg",
+    "static/media/a.jpg": "/static/media/a.cce59a56357c19a63cb6.jpg",
+    "static/media/c.jpg": "/static/media/c.a0c97f50c4960751c30c.jpg",
+    "static/media/drinks.jpg": "/static/media/drinks.a7cd19a8c0615ec98941.jpg",
+    "static/media/e.jpg": "/static/media/e.c9c4de2828059080f013.jpg",
+    "static/media/d.jpg": "/static/media/d.59a9e335c834cd785c98.jpg",
+    "static/media/b.jpg": "/static/media/b.9bc541325beaebe520c7.jpg",
+    "static/media/img2.jpg": "/static/media/img2.7b9a2eb6dedb2b2e3a3f.jpg",
+    "static/media/contact.png": "/static/media/contact.10e07f37a1963091067a.png",
+    "static/media/not found.gif": "/static/media/not found.ef269a1054bc08e1291e.gif",
+    "static/media/address.jpg": "/static/media/address.5c38eb5aa0409ed4b693.jpg",
+    "static/media/user.png": "/static/media/user.e38210f3ca74cc93eac7.png",
+    "static/media/logo-bna.png": "/static/media/logo-bna.cc423d8618f3b608fab3.png",
+    "static/media/Pics3.jpeg": "/static/media/Pics3.78c46e04a97c5b38fd17.jpeg",
+    "static/media/Pics2.jpeg": "/static/media/Pics2.d1f4d2fc8ccb07f9ddfc.jpeg",
+    "index.html": "/index.html",
+    "main.cbb8672a.css.map": "/static/css/main.cbb8672a.css.map",
+    "main.1236c17c.js.map": "/static/js/main.1236c17c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbb8672a.css",
+    "static/js/main.1236c17c.js"
+  ]
+}
